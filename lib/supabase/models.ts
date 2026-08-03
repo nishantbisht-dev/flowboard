@@ -11,6 +11,7 @@ export interface Board {
 export interface Column {
     id: string;
     board_id: string;
+    title: string;
     sort_order: number;
     created_at: string;
     user_id: string, 
@@ -23,7 +24,7 @@ export type ColumnWithTasks = Column & {
 
 export interface Task {
     id: string;
-    column: string;
+    column_id: string;
     title: string;
     description: string | null;
     assignee: string | null;
