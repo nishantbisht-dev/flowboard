@@ -737,7 +737,8 @@ export default function BoardPage() {
 
                         {/* Add task dialog */}
                         <Dialog>
-                            <DialogTrigger asChild>
+                            {/* <DialogTrigger asChild> */}
+                            <DialogTrigger>
                                 <Button className="w-full sm:w-auto">
                                     <Plus />
                                     Add Task

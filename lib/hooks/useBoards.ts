@@ -154,7 +154,7 @@ export function useBoard(boardId: string) {
     }
 
     async function moveTask(
-        taskId: String,
+        taskId: string,
         newColumnId: string,
         newOrder: number,
     ) {
