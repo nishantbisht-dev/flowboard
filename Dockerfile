@@ -1,19 +1,22 @@
 FROM node:22-alpine
 
-# Creates a folder inside the container.WORKDIR /app
+# Creates a folder inside the container
+WORKDIR /app
+
+# Copy package files
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci
 
 # Copy project files
 COPY . .
 
-# Build the Next.js app
+# Build Next.js
 RUN npm run build
 
-# Expose port
+# Expose Next.js port
 EXPOSE 3000
 
-# Start the app
+# Start production server
 CMD ["npm", "start"]
