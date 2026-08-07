@@ -144,7 +144,6 @@ export default function HomePage() {
             </div>
             <div className="flex items-center space-x-6 text-sm text-slate-400">
               <span>© 2026 FlowBoard. All rights reserved.</span>
-              <span>Made with Next.js and Clerk</span>
             </div>
           </div>
         </div>
